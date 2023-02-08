@@ -18,7 +18,8 @@ int main(int argc, char* argv[])
 		exit(1);
 	}
 
-	//getopt() returns -1 if there are no more options to process.
+	// getopt is used to parse options in command lines for easy parsing by shell procedures, and to check for valid options.
+	// getopt() returns -1 if there are no more options to process.
 	while((option = getopt(argc, argv, "a:b:")) != -1)
 	{
 		switch(option)
