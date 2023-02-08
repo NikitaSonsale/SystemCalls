@@ -17,6 +17,7 @@ int main(int argc, char* argv[])
 	int option;
 	int fdOld, fdNew;
 	int i;
+	//‘-1’ if there are no more options to process.
 	while((option = getopt(argc, argv, "a:b:")) != -1)
 	{
 		switch(option)
