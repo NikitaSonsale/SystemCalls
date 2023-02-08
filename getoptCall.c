@@ -8,15 +8,16 @@ void copy(int fdOld, int fdNew);
 
 int main(int argc, char* argv[])
 {
+	int option;
+	int fdOld, fdNew;
+	int i;
+	
 	if(argc < 2 || argc == 3 || argc > 5)
 	{
 		printf("Usage : ./a.out -a <OldFile> -b <NewFile>\n");
 		exit(1);
 	}
 
-	int option;
-	int fdOld, fdNew;
-	int i;
 	//getopt() returns -1 if there are no more options to process.
 	while((option = getopt(argc, argv, "a:b:")) != -1)
 	{
