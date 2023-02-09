@@ -4,7 +4,10 @@
 #include <time.h>
 /*
  *	int stat(const char *pathname, struct stat *statbuf);
- *	return information about a file, in the buffer pointed to by statbuf.
+ *	return information about a file which is at given pathname, in the buffer pointed to by statbuf.
+ *	
+ *      int fstat(int fd, struct stat *statbuf);
+ *	return information of a file by descriptor, in the buffer pointed to by statbuf.
  *
  *	On success, zero is returned.  On error, -1 is returned,
  */
