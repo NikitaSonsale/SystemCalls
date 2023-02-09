@@ -10,6 +10,8 @@
  *	return information of a file by descriptor, in the buffer pointed to by statbuf.
  *
  *	On success, zero is returned.  On error, -1 is returned,
+ *
+ *      Commannd line -> stat [options] <FileName>
  */
 
 int main(int argc, char *argv[])
