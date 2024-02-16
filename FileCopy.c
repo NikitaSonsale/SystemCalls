@@ -34,6 +34,7 @@ int main(int argc, char* argv[])
 	return 0;
 }
 
+// copy one file to other using read sys call
 void copy(int fdOld, int fdNew)
 {
 	int buffer[20];
