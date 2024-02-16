@@ -12,6 +12,7 @@ int main(int argc, char* argv[])
 	int fdOld, fdNew;
 	int i;
 	
+	// if arg count is less than 2 or equal to 3 or greater than 5 then exit
 	if(argc < 2 || argc == 3 || argc > 5)
 	{
 		printf("Usage : ./a.out -a <OldFile> -b <NewFile>\n");
