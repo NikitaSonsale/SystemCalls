@@ -44,6 +44,7 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
+	// change the mode of the file
 	if((chmod(FileName, i)) < 0)
 	{
 		perror(NULL);
